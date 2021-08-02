@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="choices-container">
+        <h1 id="game-choices-title">Choose your side</h1>
+        <form >
+            <div class="form-choice">
+                <input type="radio" name="choice-input" id="X" value="X">
+                <label class="choice-label"  for="X">I choose X</label>
+            </div>
+
+            <div class="form-choice">
+                <input type="radio" name="choice-input" id="O" value="O">
+                <label class="choice-label" for="O">I choose O</label>
+            </div>
+
+            <button id="start-game-btn" type="submit" disabled>Start</button>
+        </form>
+    </div>
+
+    <div id="game-container">
+        <div id="header">
+            <h1 id="game-name">Tic Tac Toe</h1>
+            <img src="./images/logo.png" alt="logo" id="logo" class="animate__animated animate__rubberBand logo">
+        </div>
+         
+        <div class="row row1">
+            <div class="box" id="box1"> </div>
+            <div class="box" id="box2"> </div>
+            <div class="box" id="box3"> </div>
+        </div>
+
+        <div class="row row2">
+            <div class="box" id="box4"> </div>
+            <div class="box" id="box5"> </div>
+            <div class="box" id="box6"> </div>
+        </div>
+
+        <div class="row row3">
+            <div class="box" id="box7"> </div>
+            <div class="box" id="box8"> </div>
+            <div class="box" id="box9"> </div>
+        </div>
+
+        <h3 id="text-winner"></h3>
+
+        <button id="reset" disabled>Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

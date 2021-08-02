@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right,  #7F7FD5, #86A8E7, #91EAE4 );
+    font-family: 'Lato', sans-serif;
+}
+
+#choices-container {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-label {
+    font-weight: bold;
+}
+
+#game-choices-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+
+#start-game-btn {
+    font-size: 0.9rem; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.5rem 2rem;
+    background-color: #A6334D;
+    color: #ffffff;
+    border-radius: 2px;
+    margin-top: 1rem;
+}
+
+#start-game-btn:hover {
+    background-color: #c2526c;
+    transition: background-color 0.3s;
+}
+
+#game-container {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+#game-name {
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#logo{
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+ 
+
+.row {
+    width: 45vw;
+    background-color: transparent;
+    display: flex;
+     
+}
+
+.box {
+    border: 1px solid white;
+    width: 33.3%;
+    height: 7rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;  
+}
+
+#text-winner {
+    font-size: 1.2rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+#reset {
+    font-size: 0.9rem; 
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.5rem 2rem;
+    background-color: #A6334D;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+#reset:hover {
+    background-color: #c2526c;
+    transition: background-color 0.3s;
+}
+
+@media(max-width:768px) {
+    .row {
+        width: 68vw;
+         
+    }
+}
+
+
+ 
+ 
+ 
